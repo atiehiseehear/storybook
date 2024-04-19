@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "distribute": "rimraf dist/factory-utils && mkdirp dist/factory-utils && babel src/correct-directory -d dist/factory-utils --copy-files"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +40,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
     "@chromatic-com/storybook": "^1.3.3",
     "@storybook/addon-essentials": "^8.0.8",
     "@storybook/addon-interactions": "^8.0.8",
