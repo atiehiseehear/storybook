@@ -1,8 +1,3 @@
-function App() {
-  return (
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
-  );
-}
-export default App;
+export { default as Button } from "./components/Button/Button";
+
+// Export other components
